@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Learning a react ",
   "keywords": [],
-  "homepage": "https://github.com/noorulhakku/learn-react#readme",
+  "homepage": "https://noorulhakku.github.io/learn-react",
   "bugs": {
     "url": "https://github.com/noorulhakku/learn-react/issues"
   },
@@ -16,11 +16,14 @@
   "type": "commonjs",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest"
+    "build": "parcel build index.html --public-url ./",
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
+    "gh-pages": "^6.3.0",
     "init": "^0.1.2",
     "npx": "^10.2.2",
     "parcel": "^2.16.3",

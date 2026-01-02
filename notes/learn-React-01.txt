@@ -1,0 +1,172 @@
+
+npm -> doesn't stand for Node package manager
+ 
+https://github.com/npm/npm-expansions/blob/HEAD/expansions.txt
+
+its a package manager
+
+npm basically a standard repository for all project 
+
+Manages data for you and project
+
+npm init 
+
+
+
+
+PS G:\learn-react> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (learn-react)
+version: (1.0.0)
+description: Learning a react
+entry point: (App.js)
+test command: jest
+git repository: (https://github.com/noorulhakku/learn-react.git)
+keywords: react, learn react , Noorul hakku
+author: Noorul Hakku
+license: (ISC)
+type: (commonjs)
+
+PS G:\learn-react>
+
+Package.json is generating after run above comments basically a configuration of an npm
+its created a json file 
+Why we need package.json?
+    Node is Package manager 
+    Project dependent on more packages 
+    Npm take care of version it where it taken package.json
+    configuration of Npm
+
+Installing dependency packages 
+    Installing most important package in our project is bundler 
+    what is bundler?
+        Html and js whole code cleaned , whole code 
+        webpack, parcel or wheat are the bundler
+        Bundle the app so that 
+
+    Currently we going to use parcel bundler
+    parcel will 
+    commands:    
+    2 types of dependency we can install
+        - one is dev dependency    -> Development face while developing a app that time require dev dependency
+        - one is normal dependency -> production
+
+    -D dev dependency
+    npm install -D parcel
+    
+
+     "parcel": "^2.16.3" -->
+
+      ^ is basically known as caret 
+      ^ 2.16.3 while but this symbol new minor version upgrade came means its automatically upgrade the version
+      ~ 3.01.1 -> major upgrade cames it automatically upgrade 
+
+      ^ is best use it while because advance major updates creates depcrecated issues                                  
+
+what is package.json
+  - configuration of npm
+  - its keep track of what version installed in our system
+  - installed minor version install
+What is package-lock.json
+  - kind of lock the version and exact version of package installed
+  - extact version will be mentioend
+  - its keep the track of all the version and dependency
+  
+what is integrity?
+hash -> 
+
+node_modules
+
+i installed only parcel
+other modules why installed 
+parcel is project have own dependency
+
+
+Every modules having its own package.json
+node module is kind of database.
+ 
+
+Package and package.lock json note what are all dependency of version so update all the git
+
+Suppose node_modules its will create basically install based on the package and package.lock version
+
+Ingite our app: npx parcel index.html
+
+npm -> installing the packages
+npx -> executing the package
+
+Install react : npm install react
+install react-dom : npm install react-dom 
+small version  : npm i react-dom
+
+After installed this will be shown
+
+App.js:10 Uncaught ReferenceError: React is not defined
+
+import React  from "react";
+import ReactDOM from "react-dom";
+
+By using import , importing the react and react-dom modules from node modules
+
+
+Parcel :
+   - it create a dev build
+   - it create a local server 
+   - it is doing HMR => Hot Module Replacement
+   - File watching algorithm - writtern in c++;
+   - caching - faster builds -> caching every things to do faster
+   - image optimization 
+   - minification files 
+   - bundle all the files 
+   - compress the files so many work parcel can do......  
+   - eg:  PM modi - react 
+      Amit sha -> parcel and small minister
+      like finance minister ->
+   - consistent hashing -> keeps track -> 
+   - code splitting 
+   - differential bunding -> app can be opened in internet explorer older version 
+                             open in chrome or firefox
+                             to support older browser
+   - diagnostic
+   - error handling
+   - Https - parcel gives this feature
+   - https://parceljs.org/ --> how to read
+   - Tree shaking -> algorithm -> will remove unused code for you 
+   - Different components for dev
+   - Different components for production
+   
+  - Remove the app.js in package.json file
+
+
+When execute parsel?
+   its generate the dev build 
+
+
+Production build generate : npx react build index.html
+Dev build generate : npx react index.html
+
+
+Run old module have to check browser list
+
+ "broserslist":[
+    "last 2 chrome version",
+    "last 2 firefox version"
+  ]   when declare only work on those browsers
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "Learning a react ",
+  "keywords": [],
+  "homepage": "https://github.com/noorulhakku/learn-react#readme",
+  "bugs": {
+    "url": "https://github.com/noorulhakku/learn-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noorulhakku/learn-react.git"
+  },
+  "license": "ISC",
+  "author": "Noorul Hakku",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "init": "^0.1.2",
+    "npx": "^10.2.2",
+    "parcel": "^2.16.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router": "^6.11.2",
+    "react-router-dom": "^6.30.2"
+  },
+  "broserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version"
+  ]
+}
